@@ -1,0 +1,11 @@
+#global values can be overwritten by assigning after global import <<: *global
+global: &global
+  secure_scheme: true
+  default_browser: :chrome
+  default_timeout: 30
+  ldap_server_host: 10.120.4.101
+
+api:
+
+  host: https://reqres.in
+  secure_scheme: true
