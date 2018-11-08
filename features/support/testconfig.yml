@@ -2,10 +2,15 @@
 global: &global
   secure_scheme: true
   default_browser: :chrome
-  default_timeout: 30
-  ldap_server_host: 10.120.4.101
+  default_timeout: 5
+  #retries
+  page_load_retry_attempts: 10
+  page_load_retry_interval: 2
+  email_load_retry_attempts: 30
+  email_load_retry_interval: 10
+  api_call_retry_attempts: 5
+  api_call_retry_interval: 3
 
 api:
-
-  host: https://reqres.in
-  secure_scheme: true
+    host: https://reqres.in
+    secure_scheme: true
